@@ -13,8 +13,13 @@ function search() {
         {
             document.getElementById("pass").value = " No password available ";
         }
+}
+
+function append() {
+    var ssid_arr = document.getElementById("ssid").value;
+    var curr_pass = document.getElementById("pass").value;
     
-    
+    document.getElementById("pass").value = curr_pass.concat(ssid_arr);
 }
 
 
